@@ -16,6 +16,10 @@ function setup() {
   createCanvas(1200,400);
   engine = Engine.create();
   world = engine.world;
+  
+  
+  stand1= new Stand(390,300,250,10);
+  stand2= new Stand (700,200,200,10);
 
   Box1 = new Box(300,275,30,40);
   console.log(Box1);
@@ -54,7 +58,8 @@ function setup() {
 
 
 //  createSprite(400, 200, 50, 50);
-  ground = new Ground(600,400,1200,20)
+  
+  ground = new Ground(600,400,1200,20);
  
   
  
@@ -70,6 +75,9 @@ polygon = Bodies.circle(100, 200, 50);
 function draw() {
   background(backgroundImg);  
   Engine.update(engine);
+  
+  stand1.display();
+  stand2.display();
 ground.display();
 //ground2.display();
 fill("skyblue");
