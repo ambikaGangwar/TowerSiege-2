@@ -114,7 +114,7 @@ fill("pink");
 Boxs9.display();
 
 fill("gold");
-ellipse(this.polygon.position.x,this.polygon.position.y,50,50)
+image (polyImg,this.polygon.position.x,this.polygon.position.y,50,50)
   slingshot.display();
 
  drawSprites();
@@ -124,6 +124,7 @@ function mouseDragged(){
 }
 
 function mouseReleased(){
+  
   slingshot.fly();
 }
 
